@@ -1,0 +1,63 @@
+{% extends 'guanli.html' %}
+{% load static from staticfiles %}
+
+
+{% block title%}
+  用户管理
+{% endblock %}
+
+{% block css %}
+
+{% endblock %}
+
+
+
+
+{% block content %}
+    <div class="xinxi" style="padding-left: 200px;padding-top: 50px;float: left">
+        <table style="border: 1px cornflowerblue solid;cellspading: 1px;text-align: center;">
+            <tr>
+                <td style="font-size: medium">
+                    姓名
+                </td>
+                {% for use in namelist%}
+                    <td style="font-size: medium">{{use}}</td>
+                {% endfor %}
+            </tr>
+
+
+            <tr>
+               <td style="font-size: medium">密码</td>
+               {% for pass in passwordlist%}
+                  <td style="font-size: medium">{{pass}}</td>
+               {% endfor %}
+            <tr>
+
+
+            <tr>
+               <td style="font-size: medium">电话</td>
+               {% for tel in tellist%}
+                   <td>{{tel}}</td>
+               {% endfor %}
+            </tr>
+
+            <tr>
+               <td style="font-size: medium">操作</td>
+               {% for tel in tellist%}
+                   <td><button>删除</button></td>
+               {% endfor %}
+            </tr>
+
+
+
+
+
+        </table>
+
+    </div>
+{% endblock %}
+
+
+{% block js %}
+
+{% endblock %}

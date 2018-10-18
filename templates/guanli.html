@@ -1,0 +1,88 @@
+
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link rel="stylesheet" href="/static/css/guanli.css" />
+<head>
+	<script type="text/javascript" src="/static/js/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="/static/js/02.js"></script>
+</head>
+<body >
+	<form action="" method="post" >
+				<table border="0" width="100%" height="100" background="/static/image/sucai/admin/11.jpg">
+					<tr><td align="center"  style="font-size: 30px; font-style: oblique; color:green;">亲爱的刘应乾,欢迎你进入瓜子二手车后台管理系统</td></tr>
+				</table>
+
+    </form>
+    <div class="container">
+        <div class="leftsidebar_box">
+            <div class="line"></div>
+            <dl class="system_log">
+                <dt onClick="changeImage()">客户管理<img src="/static/image/sucai/admin/01.png"></dt>
+                <dd class="first_dd"><a href="/carapp/useradd/">添加客户信息</a></dd>
+                <dd><a href="/carapp/check/">查询客户信息</a></dd>
+                <dd><a href="/carapp/check/">修改客户信息</a></dd>
+                <dd><a href="/carapp/check/">删除客户信息</a></dd>
+            </dl>
+
+            <dl class="custom">
+                <dt onClick="changeImage()"><a href="#" style="color: white;font-size:15px;">审核客户汽车</a></dt>
+            </dl>
+            <dl class="channel">
+                <dt>上传客户汽车<img src="/static/image/sucai/admin/01.png"></dt>
+                <dd class="first_dd"><a href="#">汽车估价</a></dd>
+                <dd><a href="#">汽车信息</a></dd>
+                <dd><a href="#">客户售价</a></dd>
+                <dd><a href="#">渠道商管理</a></dd>
+                <dd><a href="#">渠道商链接</a></dd>
+            </dl>
+
+            <dl class="app">
+                <dt onClick="changeImage()">网站管理<img src="/static/image/sucai/admin/01.png"></dt>
+                <dd class="first_dd"><a href="#">网站运营管理</a></dd>
+                <dd><a href="#">开放接口管理</a></dd>
+                <dd><a href="#">接口类型管理</a></dd>
+            </dl>
+
+            <dl class="cloud">
+                <dt>大数据云平台<img src="/static/image/sucai/admin/01.png"></dt>
+                <dd class="first_dd"><a href="#">平台运营商管理</a></dd>
+            </dl>
+
+            <dl class="syetem_management">
+                <dt>系统管理<img src="/static/image/sucai/admin/01.png"></dt>
+                <dd class="first_dd"><a href="#">后台用户管理</a></dd>
+                <dd><a href="#">角色管理</a></dd>
+                <dd><a href="#">客户类型管理</a></dd>
+                <dd><a href="#">栏目管理</a></dd>
+                <dd><a href="#">微官网模板组管理</a></dd>
+                <dd><a href="#">商城模板管理</a></dd>
+                <dd><a href="#">微功能管理</a></dd>
+                <dd><a href="#">修改用户密码</a></dd>
+            </dl>
+
+            <dl class="source">
+                <dt>素材库管理<img src="/static/image/sucai/admin/01.png"></dt>
+                <dd class="first_dd"><a href="#">图片库</a></dd>
+                <dd><a href="#">链接库</a></dd>
+                <dd><a href="#">推广管理</a></dd>
+            </dl>
+
+            <dl class="statistics">
+                <dt>统计分析<img src="/static/image/sucai/admin/01.png"></dt>
+                <dd class="first_dd"><a href="#">客户统计</a></dd>
+            </dl>
+
+
+        </div>
+
+    </div>
+
+
+     {% block content %}{% endblock %}
+     {% block js %}{% endblock %}
+</body>
+</html>
