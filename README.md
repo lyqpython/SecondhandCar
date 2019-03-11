@@ -1,10 +1,8 @@
-瓜子二手车网站
+二手车网站
 
 ◎软件环境：Windows+python3.0+MySQL
 
 ◎编程工具：HBuilder,PyCharm,Navicat for MySQL，Django
-
-◎开发人员：2人
 
 ◎项目周期：一周半
 
